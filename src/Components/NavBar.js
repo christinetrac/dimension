@@ -15,6 +15,11 @@ const NavBar = (props) => {
                     your courses
                 </button>
             </Link>
+            <Link to="/chat">
+                <button>
+                    chatty chatter
+                </button>
+            </Link>
         </div>
     );
 };
