@@ -54,4 +54,28 @@ const MISSED_STREAMS = [
     }
 ];
 
-export { LIVE_COURSES, MISSED_STREAMS }
+const UPCOMING_STREAMS = [
+    {
+        title: 'Making Fresh Pasta',
+        creator: 'Newt',
+        date: 'May 1st @ 17:00',
+        dimension: 'Cooking',
+        image: require('../assets/profile1.png').default
+    },
+    {
+        title: 'How to Use Slab Clay',
+        creator: 'Lolita Olympia',
+        date: 'May 2nd @ 09:00',
+        dimension: 'Pottery',
+        image: require('../assets/profile2.png').default
+    },
+    {
+        title: 'Lunchbox Cakes',
+        creator: 'Daram\'s Table',
+        date: 'May 2nd @ 012:00',
+        dimension: 'Baking',
+        image: require('../assets/profile3.png').default
+    }
+];
+
+export { LIVE_COURSES, MISSED_STREAMS, UPCOMING_STREAMS }

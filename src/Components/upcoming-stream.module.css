@@ -1,0 +1,89 @@
+.container {
+    width: 323px;
+    height: 176px;
+    background-color: #F3F3F3;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: Manrope, sans-serif;
+    position: relative;
+    margin-right: 30px;
+}
+
+.image {
+    width: 57px;
+    height: 57px;
+    position: absolute;
+    top: 33px;
+    left: 28px;
+}
+
+.add {
+    width: 20px;
+    height: 20px;
+    color: #363636;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.title {
+    font-size: 18px;
+    color: #363636;
+    position: absolute;
+    top: 35px;
+    left: 104px;
+}
+
+.creator {
+    font-size: 15px;
+    color: #363636;
+    left: 104px;
+    top: 65px;
+    position: absolute;
+}
+
+.date {
+    flex-direction: row;
+    display: flex;
+    position: absolute;
+    top: 101px;
+    left: 107px;
+    color: #7544FF;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.cal {
+    color: #7544FF;
+    height: 13px;
+    width: 12px;
+    margin-right: 10px;
+}
+
+.tag {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 11px;
+    width: 86px;
+    height: 23px;
+    bottom: 22px;
+    right: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cube {
+    color: #D2C2FF;
+    height: 17px;
+    width: 16px;
+}
+
+.tagText {
+    font-weight: 700;
+    font-size: 12px;
+    color: #7544FF;
+    margin-bottom: 3px;
+    margin-left: 6px;
+}
