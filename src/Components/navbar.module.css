@@ -3,9 +3,51 @@
     position: -webkit-sticky;
     top: 0;
     left: 0;
-    width: 303px;
+    width: 21vw;
     height: 100vh;
-    background: #F3F3F3;
+    background: #fff;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
     border-radius: 0 0 87px 0;
+    font-family: Manrope, sans-serif;
+}
+
+.blob1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.blob2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0 0 87px 0;
+    pointer-events: none;
+}
+
+.navTopContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 135px;
+    margin-left: 45px;
+}
+
+.topLink {
+    text-decoration: none;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.topLink p {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 18px;
+    margin-left: 14px;
+}
+
+.topIcon {
+    width: 23px;
+    height: 23px;
 }

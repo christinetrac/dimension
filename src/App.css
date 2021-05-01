@@ -1,7 +1,7 @@
 .App {
-  position: relative;
-  display: flex;
-}
+   position: relative;
+   display: flex;
+ }
 
 @font-face {
   font-family: 'Manrope';
