@@ -39,6 +39,7 @@
 .title {
     flex-direction: row;
     display: flex;
+    margin-bottom: 22px;
 }
 
 .titleIcon {
@@ -51,4 +52,10 @@
     font-size: 18px;
     color: #363636;
     margin-left: 12px;
+}
+
+.liveCourses {
+    margin-left: 53px;
+    display: flex;
+    flex-direction: row;
 }

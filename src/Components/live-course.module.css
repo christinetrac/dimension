@@ -1,0 +1,88 @@
+.container {
+    width: 269px;
+    height: 286px;
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 3px 3px 10px 10px;
+    font-family: Manrope, sans-serif;
+    position: relative;
+    margin-right: 30px;
+}
+
+.image {
+    width: 269px;
+    height: 175px;
+    position: absolute;
+    top: 0;
+}
+
+.live {
+    width: 66px;
+    height: 23px;
+    background-color: #FF4F4F;
+    color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    top: 7px;
+    left: 12px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 15px;
+    color: #000000;
+    position: absolute;
+    top: 187px;
+    left: 16px;
+}
+
+.creator {
+    font-weight: 300;
+    font-size: 12px;
+    color: #363636;
+    left: 16px;
+    top: 213px;
+    position: absolute;
+}
+
+.eye {
+    height: 10px;
+    width: 16px;
+    margin-left: 14px;
+    margin-right: 7px;
+}
+
+.tag {
+    position: absolute;
+    background-color: #F0F0F0;
+    border-radius: 11px;
+    width: 86px;
+    height: 23px;
+    bottom: 20px;
+    left: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cube {
+    color: #D2C2FF;
+    height: 17px;
+    width: 16px;
+}
+
+.tagText {
+    font-weight: 700;
+    font-size: 12px;
+    color: #7544FF;
+    margin-bottom: 3px;
+    margin-left: 6px;
+}

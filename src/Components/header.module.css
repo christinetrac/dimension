@@ -1,7 +1,7 @@
 .header {
     position: absolute;
-    left: calc(50px + 19vw);
-    width: calc(100vw - 100px - 19vw);
+    left: calc(50px + 17vw);
+    width: calc(100vw - 100px - 17vw);
     top: 35px;
     flex-direction: row;
     display: flex;

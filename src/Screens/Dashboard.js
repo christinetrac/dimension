@@ -4,8 +4,16 @@ import { NavBar } from "../Components/NavBar";
 import { Header } from "../Components/Header";
 import banner from "../assets/dashboard-banner.svg";
 import { MdLiveTv } from "react-icons/md";
+import { LIVE_COURSES } from "../constants/constants";
+import { LiveCourse } from "../Components/LiveCourse";
 
 const Dashboard = (props) => {
+    const liveCourses = LIVE_COURSES.map( course => {
+        return (
+                <LiveCourse key={course} course={course}/>
+            )
+    });
+
     return (
         <div className={styles.main}>
             <NavBar active={props.location.pathname}/>
@@ -19,6 +27,9 @@ const Dashboard = (props) => {
                         <MdLiveTv className={styles.titleIcon} style={{paddingTop: '6px'}}/>
                         <div className={styles.titleText}>Live Courses</div>
                     </div>
+                </div>
+                <div className={styles.liveCourses}>
+                    {liveCourses}
                 </div>
             </div>
         </div>
