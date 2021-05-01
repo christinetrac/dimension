@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 const Chat = (props) => {
-    const [setCurrentUsername, currentUsername] = useState('');
-    const [setCurrentScreen, currentScreen] = useState('WhatIsYourUsernameScreen');
+    const [currentUsername, setCurrentUsername] = useState('');
+    const [currentScreen, setCurrentScreen] = useState('WhatIsYourUsernameScreen');
 
     useEffect(() => {
         onUsernameSubmitted()
