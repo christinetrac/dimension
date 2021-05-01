@@ -24,12 +24,12 @@ const Chat = (props) => {
             .catch(error => console.error('error', error))
     }
 
-    if (currentScreen === 'WhatIsYourUsernameScreen') {
-        return <UsernameForm onSubmit={onUsernameSubmitted} />
-    }
-    if (currentScreen === 'ChatScreen') {
-        return <ChatScreen currentUsername={currentUsername} />
-    }
+    // if (currentScreen === 'WhatIsYourUsernameScreen') {
+    //     return <UsernameForm onSubmit={onUsernameSubmitted} />
+    // }
+    // if (currentScreen === 'ChatScreen') {
+    //     return <ChatScreen currentUsername={currentUsername} />
+    // }
 };
 
 export { Chat } ;
