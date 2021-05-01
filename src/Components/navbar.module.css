@@ -3,7 +3,7 @@
     position: -webkit-sticky;
     top: 0;
     left: 0;
-    width: 21vw;
+    width: 19vw;
     height: 100vh;
     background: #fff;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
@@ -29,15 +29,16 @@
 .navTopContainer {
     display: flex;
     flex-direction: column;
-    margin-top: 135px;
+    margin-top: 105px;
     margin-left: 45px;
 }
 
 .topLink {
     text-decoration: none;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: row;
+    height: 36px;
 }
 
 .topLink p {
@@ -45,9 +46,63 @@
     margin-top: 0;
     font-size: 18px;
     margin-left: 14px;
+    padding-bottom: 3px;
+    color: #363636;
 }
 
 .topIcon {
     width: 23px;
     height: 23px;
+    color: #363636;
+}
+
+.topLink:hover p, .topLink:hover .topIcon{
+    color: #7544FF;
+}
+
+.topLink:hover {
+    border-right: 3px solid #7544FF;
+}
+
+.navBottomContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25%;
+    border-top: 1px solid lightgrey;
+}
+
+.bottomLink {
+    display: flex;
+    flex-direction: row;
+    margin-left: 45px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.bottomLink p {
+    margin-bottom: 0;
+    font-size: 18px;
+    margin-left: 14px;
+    padding-bottom: 3px;
+    margin-top: 0;
+    color: #878787;
+}
+
+.dimensionIcon {
+    color: #878787;
+    width: 25px;
+    height: 25px;
+}
+
+.dimensionLinks {
+    margin-left: 80px;
+    margin-top: 20px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.dimensionLinks:hover {
+    color: #7544FF;
 }
