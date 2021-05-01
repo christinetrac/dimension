@@ -4,14 +4,22 @@ import { NavBar } from "../Components/NavBar";
 import { Header } from "../Components/Header";
 import banner from "../assets/dashboard-banner.svg";
 import { MdLiveTv } from "react-icons/md";
-import { LIVE_COURSES } from "../constants/constants";
+import { MdPlayCircleOutline } from "react-icons/md"
+import { LIVE_COURSES, MISSED_STREAMS } from "../constants/constants";
 import { LiveCourse } from "../Components/LiveCourse";
+import { MissedStream } from "../Components/MissedStream";
 
 const Dashboard = (props) => {
     const liveCourses = LIVE_COURSES.map( course => {
         return (
                 <LiveCourse key={course} course={course}/>
             )
+    });
+
+    const missedStreams = MISSED_STREAMS.map( course => {
+       return (
+           <MissedStream key={course} course={course}/>
+       )
     });
 
     return (
@@ -30,6 +38,19 @@ const Dashboard = (props) => {
                 </div>
                 <div className={styles.liveCourses}>
                     {liveCourses}
+                </div>
+
+                <div style={{marginLeft: '54px', marginTop:'70px', marginRight:'33px', display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+                    <div className={styles.title}>
+                        <MdPlayCircleOutline className={styles.titleIcon} style={{paddingTop: '6px'}}/>
+                        <div className={styles.titleText}>Streams You Missed</div>
+                    </div>
+                    <div>
+                        <div className={styles.titleText}>View All</div>
+                    </div>
+                </div>
+                <div className={styles.missedStreams}>
+                    {missedStreams}
                 </div>
             </div>
         </div>

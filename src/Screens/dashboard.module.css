@@ -11,7 +11,6 @@
 .banner {
     margin-top: 65px;
     margin-left: -110px;
-    animation: fadeIn ease 6s forwards;
 }
 
 .bannerText {
@@ -45,7 +44,7 @@
 .titleIcon {
     color: #363636;
     width: 12px;
-    height: 10px;
+    height: 12px;
 }
 
 .titleText {
@@ -55,6 +54,12 @@
 }
 
 .liveCourses {
+    margin-left: 53px;
+    display: flex;
+    flex-direction: row;
+}
+
+.missedStreams {
     margin-left: 53px;
     display: flex;
     flex-direction: row;
