@@ -1,0 +1,11 @@
+.nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+    width: 303px;
+    height: 100vh;
+    background: #F3F3F3;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 87px 0;
+}

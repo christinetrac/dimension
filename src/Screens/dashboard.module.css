@@ -1,0 +1,13 @@
+.main {
+    display: flex;
+    position: relative;
+}
+
+.dashboard {
+    height: 150vh;
+    width: 100vw;
+}
+
+.font {
+    font-family: Manrope, sans-serif;
+}

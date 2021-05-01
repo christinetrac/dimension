@@ -1,15 +1,14 @@
-import { Link } from "react-router-dom";
 import React from 'react';
+import styles from './your-courses.module.css';
+import { NavBar } from "../Components/NavBar";
 
-const YourCourses = () => {
+const YourCourses = (props) => {
     return (
-        <div>
-            hi im your courses page
-            <Link to="/">
-                <button>
-                    dashboard
-                </button>
-            </Link>
+        <div className={styles.main}>
+            <NavBar active={props.location.pathname}/>
+            <div className={styles.yourCourses}>
+                hi im your courses page {props.location.pathname}
+            </div>
         </div>
     );
 };

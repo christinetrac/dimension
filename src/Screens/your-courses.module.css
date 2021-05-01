@@ -1,0 +1,13 @@
+.main {
+    display: flex;
+    position: relative;
+}
+
+.yourCourses {
+    height: 150vh;
+    width: 100vw;
+}
+
+.font {
+    font-family: Manrope, sans-serif;
+}
