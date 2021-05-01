@@ -14,7 +14,7 @@
 }
 
 .queryBar {
-    width: 417px;
+    width: 458px;
     background-color: #fff;
     border-left: 1px solid #F0F0F0;
     border-top: 1px solid #F0F0F0;
@@ -24,6 +24,10 @@
     border-radius: 8px 0 0 8px;
     height: 40px;
     padding-left: 21px;
+}
+
+.queryBar:focus {
+    outline: none;
 }
 
 input {
