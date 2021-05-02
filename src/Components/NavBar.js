@@ -7,12 +7,14 @@ import { MdDashboard } from "react-icons/md";
 import { MdSchool } from "react-icons/md";
 import { CgPlayListSearch } from "react-icons/cg";
 import { FaCube } from "react-icons/fa";
+import logo from "../assets/logo.svg";
 
 const NavBar = (props) => {
     return (
         <div className={styles.nav}>
             <img src={blob1} className={styles.blob1} alt="blob1"/>
             <img src={blob2} className={styles.blob2} alt="blob2"/>
+            <img src={logo} className={styles.logo}/>
             <div className={styles.navTopContainer}>
                 <Link to="/" className={styles.topLink}>
                     <MdDashboard className={styles.topIcon} style={{color: props.active === '/' ? '#7544FF' : '#363636'}}/>
@@ -29,7 +31,7 @@ const NavBar = (props) => {
                 <a href="http://34.66.210.81/" className={styles.topLink}>
                     <CgPlayListSearch className={styles.topIcon} style={{color: props.active === '/chat' ? '#7544FF' : '#363636', width:'28px', height:'28px'}}/>
                     <p style={{color: props.active === '/chat' ? '#7544FF' : '#363636'}}>
-                        Chatty Chatter
+                        Browse
                     </p>
                 </a>
             </div>

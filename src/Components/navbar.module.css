@@ -12,6 +12,12 @@
     z-index: 99;
 }
 
+.logo {
+    position: absolute;
+    top: 38px;
+    left: 46px;
+}
+
 .blob1 {
     position: absolute;
     top: 0;
@@ -30,8 +36,9 @@
 .navTopContainer {
     display: flex;
     flex-direction: column;
-    margin-top: 105px;
+    margin-top: 135px;
     margin-left: 45px;
+    position: relative;
 }
 
 .topLink {

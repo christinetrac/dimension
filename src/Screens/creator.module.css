@@ -33,6 +33,12 @@
     margin-right: 25px;
 }
 
+.verify {
+    position: absolute;
+    left: 236px;
+    top: 4px;
+}
+
 .link {
     text-decoration: none;
     font-weight: 700;

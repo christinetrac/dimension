@@ -56,6 +56,27 @@ input::placeholder {
 .iconWrapper {
     margin-left: 45px;
     margin-top: 12px;
+    position: relative;
+}
+
+.dot1 {
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: #FF7D7D;
+}
+
+.dot2 {
+    position: absolute;
+    left: 66px;
+    top: 0px;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: #FF7D7D;
 }
 
 .profileWrapper {

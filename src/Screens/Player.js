@@ -6,6 +6,7 @@ import { MdFavorite } from "react-icons/md"
 import { FaCube } from "react-icons/fa";
 import profile from "../assets/profile1.png";
 import {Link} from "react-router-dom";
+import verify from "../assets/verify.svg";
 
 const Player = (props) => {
 
@@ -23,8 +24,9 @@ const Player = (props) => {
                 <div className={styles.creatorContainer}>
                     <div style={{flexDirection:'row', display:'flex'}}>
                         <img src={profile} alt="" className={styles.pic}/>
-                        <div style={{marginTop:'54px'}}>
+                        <div style={{marginTop:'54px', position:'relative'}}>
                             <div className={styles.label}>course creator</div>
+                            <img src={verify} alt="verify" className={styles.verify}/>
                             <Link to='/amii-ceramics' className={styles.link}>Amii Ceramics</Link>
                             <div className={styles.tag}>
                                 <FaCube className={styles.cube}/>

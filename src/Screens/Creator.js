@@ -16,6 +16,7 @@ import { MdPlayCircleOutline } from "react-icons/md"
 import { PrevStream } from "../Components/PrevStream";
 import { PREV_STREAMS, UPCOMING_COURSES } from "../constants/constants";
 import { UpcomingCourse } from "../Components/UpcomingCourse";
+import verify from "../assets/verify.svg";
 
 const Creator = (props) => {
     const prevStreams = PREV_STREAMS.map( course => {
@@ -39,7 +40,8 @@ const Creator = (props) => {
                 <div className={styles.creatorContainer}>
                     <div style={{flexDirection:'row', display:'flex'}}>
                         <img src={profile} alt="" className={styles.pic}/>
-                        <div style={{marginTop:'54px'}}>
+                        <div style={{marginTop:'54px', position:'relative'}}>
+                            <img src={verify} className={styles.verify}/>
                             <div className={styles.link}>Amii Ceramics</div>
                             <div style={{flexDirection:'row', display:'flex'}}>
                                 <div className={styles.tag}>
@@ -74,7 +76,7 @@ const Creator = (props) => {
                 <div className={styles.videoContainer}>
                     <img src={thumbnail} alt="thumbnail" className={styles.thumbnail}/>
                     <div className={styles.videoTitle}>Giraffe Ceramic Planters</div>
-                    <Link to='/amii-ceramics' className={styles.watchButton}>
+                    <Link to='/live-stream' className={styles.watchButton}>
                         <MdOpenInNew className={styles.newWindow}/>
                         Start Watching
                     </Link>

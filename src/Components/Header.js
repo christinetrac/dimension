@@ -24,6 +24,8 @@ const Header = (props) => {
                 </div>
             </div>
             <div className={styles.iconWrapper}>
+                <div className={styles.dot1}/>
+                <div className={styles.dot2}/>
                 <MdNotificationsNone style={{color:'#363636', width:'24px', height:'21px'}}/>
                 <MdInbox style={{color:'#363636', width:'20px', height:'20px', marginLeft:'20px'}}/>
             </div>
