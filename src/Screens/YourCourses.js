@@ -5,12 +5,11 @@ import { Header } from "../Components/Header";
 import banner from "../assets/your-courses-banner.svg";
 import { LIVE_COURSES, SUBSCRIBED_CHANNELS, UPCOMING_STREAMS } from "../constants/constants";
 import { LiveCourse } from "../Components/LiveCourse";
-import { MissedStream } from "../Components/MissedStream";
-import { IoIosCalendar } from "react-icons/io";
-import { UpcomingStream } from "../Components/UpcomingStream";
 import { MdLiveTv } from "react-icons/md";
 import { MdFavorite } from "react-icons/md"
+import { FaCube } from "react-icons/fa";
 import { SubscribedChannels } from "../Components/SubscribedChannels";
+import { DimensionButton } from "../Components/DimensionButton";
 
 const YourCourses = (props) => {
     const liveCourses = LIVE_COURSES.map( course => {
@@ -31,6 +30,14 @@ const YourCourses = (props) => {
         )
     });
 
+    const dimensionList = ['Pottery', 'Fitness', 'Origami'];
+
+    const yourDimensions = dimensionList.map( dim => {
+        return (
+            <DimensionButton key={dim} name={dim}/>
+        )
+    });
+
     return (
         <div className={styles.main}>
             <NavBar active={props.location.pathname}/>
@@ -39,7 +46,20 @@ const YourCourses = (props) => {
                 <img src={banner} alt="" className={styles.banner}/>
                 <div className={styles.bannerText}><span>your courses</span></div>
 
-                <div style={{marginLeft: '54px', marginTop:'-120px'}}>
+                <div style={{marginLeft: '54px', marginTop:'-120px', marginRight:'33px', display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+                    <div className={styles.title}>
+                        <FaCube className={styles.titleIcon} style={{paddingTop: '7px'}}/>
+                        <div className={styles.titleText}>Your Dimensions</div>
+                    </div>
+                    <div>
+                        <div className={styles.titleText}>Edit</div>
+                    </div>
+                </div>
+                <div className={styles.liveCourses}>
+                    {yourDimensions}
+                </div>
+
+                <div style={{marginLeft: '54px', marginTop:'70px'}}>
                     <div className={styles.title}>
                         <MdLiveTv className={styles.titleIcon} style={{paddingTop: '6px'}}/>
                         <div className={styles.titleText}>Live Courses</div>
