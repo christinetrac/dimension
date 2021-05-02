@@ -14,7 +14,10 @@ const Player = (props) => {
             <NavBar active={props.location.pathname}/>
             <Header/>
             <div className={styles.player}>
-
+                <div style = {{flexDirection:'row', display:'flex'}}>
+                    <iframe src="http://localhost:3001/depth.html" height="100%" width="100%"></iframe>
+                    <iframe src="http://34.66.210.81/" height="100%"></iframe>
+                </div>
                 <div className={styles.creatorContainer}>
                     <div style={{flexDirection:'row', display:'flex'}}>
                         <img src={profile} alt="" className={styles.pic}/>
