@@ -159,4 +159,22 @@ const PREV_STREAMS = [
     }
 ];
 
-export { LIVE_COURSES, MISSED_STREAMS, UPCOMING_STREAMS, SUBSCRIBED_CHANNELS, PREV_STREAMS }
+const UPCOMING_COURSES = [
+    {
+        title: 'Ceramic Piggy Planter',
+        description: 'Building a piggy planter that you can display in your home!',
+        date: 'May 1st @ 17:00',
+    },
+    {
+        title: 'How to Glaze Efficiently',
+        description: 'Learn how to glaze your adorable pieces with efficiency and detail.',
+        date: 'May 3rd @ 20:00',
+    },
+    {
+        title: 'Ceramic Pins',
+        description: 'Build animal ceramic pins from scratch from home, no equipment required!',
+        date: 'May 6th @ 17:00',
+    }
+];
+
+export { LIVE_COURSES, MISSED_STREAMS, UPCOMING_STREAMS, SUBSCRIBED_CHANNELS, PREV_STREAMS, UPCOMING_COURSES }

@@ -14,13 +14,20 @@ import {Link} from "react-router-dom";
 import blob from '../assets/creator-blob.svg';
 import { MdPlayCircleOutline } from "react-icons/md"
 import { PrevStream } from "../Components/PrevStream";
-import { PREV_STREAMS } from "../constants/constants";
+import { PREV_STREAMS, UPCOMING_COURSES } from "../constants/constants";
+import { UpcomingCourse } from "../Components/UpcomingCourse";
 
 const Creator = (props) => {
     const prevStreams = PREV_STREAMS.map( course => {
         return (
             <PrevStream key={course} course={course}/>
         )
+    });
+
+    const upcomingCourses = UPCOMING_COURSES.map ( course => {
+        return (
+            <UpcomingCourse key={course} course={course}/>
+        );
     });
 
     return (
@@ -90,6 +97,9 @@ const Creator = (props) => {
                     <div>
                         <div className={styles.titleText} style={{cursor:'pointer'}}>View All</div>
                     </div>
+                </div>
+                <div className={styles.liveCourses}>
+                    {upcomingCourses}
                 </div>
 
                 <div style={{marginLeft: '46px', marginTop:'60px', marginRight:'33px', display:'flex', flexDirection:'row', justifyContent:'space-between'}}>

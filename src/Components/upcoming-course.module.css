@@ -1,0 +1,58 @@
+.container {
+    width: 323px;
+    height: 155px;
+    background-color: #F3F3F3;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: Manrope, sans-serif;
+    position: relative;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.add {
+    width: 20px;
+    height: 20px;
+    color: #363636;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.title {
+    font-size: 18px;
+    color: #363636;
+    position: absolute;
+    top: 35px;
+    left: 29px;
+    font-weight: 700;
+}
+
+.creator {
+    font-size: 12px;
+    color: #363636;
+    left: 29px;
+    top: 65px;
+    position: absolute;
+    width: 240px;
+}
+
+.date {
+    flex-direction: row;
+    display: flex;
+    position: absolute;
+    top: 101px;
+    left: 29px;
+    color: #7544FF;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.cal {
+    color: #7544FF;
+    height: 13px;
+    width: 12px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
