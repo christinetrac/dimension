@@ -46,7 +46,16 @@ const YourCourses = (props) => {
                 <img src={banner} alt="" className={styles.banner}/>
                 <div className={styles.bannerText}><span>your courses</span></div>
 
-                <div style={{marginLeft: '54px', marginTop:'-120px', marginRight:'33px', display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+                <div style={{marginLeft: '54px', marginTop:'-120px', marginRight:'33px', display:'flex', width:'689px', flexDirection:'row', justifyContent:'space-between', position:'relative'}}>
+                    <div className={styles.titleText} style={{color:'#7544FF', fontWeight:'700'}}>Overview</div>
+                    <div style={{color:'#7544FF', position:'absolute', top:'23px', left:'42px'}}>●</div>
+                    <div className={styles.titleText} style={{color:'#000'}}>Your Dimensions</div>
+                    <div className={styles.titleText} style={{color:'#000'}}>Subscribed</div>
+                    <div className={styles.titleText} style={{color:'#000'}}>Calendar</div>
+                    <div className={styles.titleText} style={{color:'#000'}}>Past Streams</div>
+                </div>
+
+                <div style={{marginLeft: '54px', marginTop:'70px', marginRight:'33px', display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
                     <div className={styles.title}>
                         <FaCube className={styles.titleIcon} style={{paddingTop: '7px'}}/>
                         <div className={styles.titleText}>Your Dimensions</div>
