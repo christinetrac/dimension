@@ -11,14 +11,24 @@ import { MdRemoveRedEye } from "react-icons/md";
 import { MdAccessTime } from "react-icons/md";
 import { MdOpenInNew } from "react-icons/md";
 import {Link} from "react-router-dom";
+import blob from '../assets/creator-blob.svg';
+import { MdPlayCircleOutline } from "react-icons/md"
+import { PrevStream } from "../Components/PrevStream";
+import { PREV_STREAMS } from "../constants/constants";
 
 const Creator = (props) => {
+    const prevStreams = PREV_STREAMS.map( course => {
+        return (
+            <PrevStream key={course} course={course}/>
+        )
+    });
 
     return (
         <div className={styles.main}>
             <NavBar active={props.location.pathname}/>
             <Header/>
             <div className={styles.creator}>
+                <img src={blob} alt="blob" className={styles.blob}/>
                 <div className={styles.creatorContainer}>
                     <div style={{flexDirection:'row', display:'flex'}}>
                         <img src={profile} alt="" className={styles.pic}/>
@@ -74,12 +84,25 @@ const Creator = (props) => {
 
                 <div style={{marginLeft: '46px', marginTop:'60px', marginRight:'33px', display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
                     <div className={styles.title}>
-                        <FaCube className={styles.titleIcon} style={{paddingTop: '7px'}}/>
-                        <div className={styles.titleText}>Your Dimensions</div>
+                        <MdPlayCircleOutline className={styles.titleIcon} style={{paddingTop: '6px'}}/>
+                        <div className={styles.titleText}>Upcoming Courses</div>
                     </div>
                     <div>
-                        <div className={styles.titleText} style={{cursor:'pointer'}}>Edit</div>
+                        <div className={styles.titleText} style={{cursor:'pointer'}}>View All</div>
                     </div>
+                </div>
+
+                <div style={{marginLeft: '46px', marginTop:'60px', marginRight:'33px', display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+                    <div className={styles.title}>
+                        <MdPlayCircleOutline className={styles.titleIcon} style={{paddingTop: '6px'}}/>
+                        <div className={styles.titleText}>Previously Streamed Courses</div>
+                    </div>
+                    <div>
+                        <div className={styles.titleText} style={{cursor:'pointer'}}>View All</div>
+                    </div>
+                </div>
+                <div className={styles.liveCourses}>
+                    {prevStreams}
                 </div>
             </div>
         </div>

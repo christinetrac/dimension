@@ -124,4 +124,39 @@ const SUBSCRIBED_CHANNELS = [
     }
 ];
 
-export { LIVE_COURSES, MISSED_STREAMS, UPCOMING_STREAMS, SUBSCRIBED_CHANNELS }
+const PREV_STREAMS = [
+    {
+        title: 'Bunny Ceramic Planter',
+        creator: 'Amii Ceramics',
+        time_ago: '2 days ago',
+        duration: '2:33:21',
+        views: '12.2k',
+        image: require('../assets/prev1.png').default
+    },
+    {
+        title: 'Octopus Ceramic Planter',
+        creator: 'Amii Ceramics',
+        time_ago: '3 days ago',
+        duration: '1:19:12',
+        views: '20.1k',
+        image: require('../assets/prev2.png').default
+    },
+    {
+        title: 'Hedgehog Ceramic Planter',
+        creator: 'Amii Ceramics',
+        time_ago: '1 week ago',
+        duration: '2:21:50',
+        views: '9.7k',
+        image: require('../assets/prev3.png').default
+    },
+    {
+        title: 'Controlling Your Wheel',
+        creator: 'Amii Ceramics',
+        time_ago: '1 week ago',
+        duration: '2:21:50',
+        views: '14.2k',
+        image: require('../assets/prev4.png').default
+    }
+];
+
+export { LIVE_COURSES, MISSED_STREAMS, UPCOMING_STREAMS, SUBSCRIBED_CHANNELS, PREV_STREAMS }
