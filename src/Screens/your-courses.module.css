@@ -1,12 +1,69 @@
 .main {
     display: flex;
     position: relative;
+    font-family: Manrope, sans-serif;
 }
 
 .yourCourses {
-    height: 150vh;
+    padding-bottom: 130px;
 }
 
-.font {
-    font-family: Manrope, sans-serif;
+.banner {
+    margin-top: 15px;
+    margin-left: -250px;
+    z-index: 99;
+    pointer-events: none;
+    position: relative;
+}
+
+.bannerText {
+    font-size: 35px;
+    color: #000000;
+    text-align: center;
+    width: 400px;
+    position: absolute;
+    letter-spacing: 0.05em;
+    top: 190px;
+    left: 25%;
+    opacity: 0;
+    animation: fadeIn ease 7s forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.bannerText span {
+    font-weight: 700;
+}
+
+.title {
+    flex-direction: row;
+    display: flex;
+    margin-bottom: 22px;
+}
+
+.titleIcon {
+    color: #363636;
+    width: 12px;
+    height: 12px;
+}
+
+.titleText {
+    font-size: 18px;
+    color: #363636;
+    margin-left: 12px;
+}
+
+.liveCourses {
+    margin-left: 53px;
+    display: flex;
+    flex-direction: row;
+}
+
+.subbedChannels {
+    margin-left: 53px;
+    display: flex;
+    flex-direction: row;
 }

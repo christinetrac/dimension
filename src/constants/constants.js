@@ -78,4 +78,43 @@ const UPCOMING_STREAMS = [
     }
 ];
 
-export { LIVE_COURSES, MISSED_STREAMS, UPCOMING_STREAMS }
+const SUBSCRIBED_CHANNELS = [
+    {
+        creator: 'Lolita Olympia',
+        live: 'Live Now',
+        dimension: 'Pottery',
+        image: require('../assets/profile2.png').default
+    },
+    {
+        creator: 'Daram\'s Table',
+        live: 'Live Now',
+        dimension: 'Baking',
+        image: require('../assets/profile3.png').default
+    },
+    {
+        creator: 'Newt',
+        live: 'Last live 4 hours ago',
+        dimension: 'Cooking',
+        image: require('../assets/profile1.png').default
+    },
+    {
+        creator: 'Pufftique',
+        live: 'Last live 10 hours ago',
+        dimension: 'Crafts',
+        image: require('../assets/profile1.png').default
+    },
+    {
+        creator: 'Mmmmonexx',
+        live: 'Last live 12 hours ago',
+        dimension: 'Painting',
+        image: require('../assets/profile1.png').default
+    },
+    {
+        creator: 'Hanse',
+        live: 'Last live 20 hours ago',
+        dimension: 'Cooking',
+        image: require('../assets/profile1.png').default
+    }
+];
+
+export { LIVE_COURSES, MISSED_STREAMS, UPCOMING_STREAMS, SUBSCRIBED_CHANNELS }

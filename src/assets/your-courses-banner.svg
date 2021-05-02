@@ -1,0 +1,42 @@
+<svg width="619" height="429" viewBox="0 0 619 429" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f)">
+<path d="M327.943 131.073C284.401 110.735 184.528 157.644 140.034 183.641C95.2073 192.843 132.204 230.455 123.911 271.983C115.618 313.511 248.371 280.518 320.678 286.843C392.985 293.168 467.303 200.055 422.605 197.749C377.907 195.444 382.369 156.497 327.943 131.073Z" fill="url(#paint0_radial)" fill-opacity="0.5"/>
+</g>
+<circle r="2" transform="matrix(-1 -1.74846e-07 -1.74846e-07 1 590 186)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(1 2.62268e-07 2.62268e-07 -1 611 216)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(-1 -1.74846e-07 -1.74846e-07 1 597 192)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(1 2.62268e-07 2.62268e-07 -1 604 210)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(-1 -1.74846e-07 -1.74846e-07 1 590 202)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(1 2.62268e-07 2.62268e-07 -1 611 200)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(1 2.62268e-07 2.62268e-07 -1 617 212)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(1 2.62268e-07 2.62268e-07 -1 583 188)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(-1 -1.74846e-07 -1.74846e-07 1 597 208)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(1 2.62268e-07 2.62268e-07 -1 604 194)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(-1 -1.74846e-07 -1.74846e-07 1 590 194)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(1 2.62268e-07 2.62268e-07 -1 611 208)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(1 2.62268e-07 2.62268e-07 -1 617 220)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(1 2.62268e-07 2.62268e-07 -1 583 196)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(-1 -1.74846e-07 -1.74846e-07 1 597 200)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(1 2.62268e-07 2.62268e-07 -1 604 202)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(-1 -1.74846e-07 -1.74846e-07 1 590 210)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(-1 -1.74846e-07 -1.74846e-07 1 583 204)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(-1 -1.74846e-07 -1.74846e-07 1 583 212)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(1 2.62268e-07 2.62268e-07 -1 611 192)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(1 2.62268e-07 2.62268e-07 -1 617 204)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(1 2.62268e-07 2.62268e-07 -1 583 180)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(-1 -1.74846e-07 -1.74846e-07 1 597 216)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(1 2.62268e-07 2.62268e-07 -1 604 186)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(-1 -1.74846e-07 -1.74846e-07 1 597 182)" fill="#CCEEDA"/>
+<circle r="2" transform="matrix(1 2.62268e-07 2.62268e-07 -1 604 220)" fill="#CCEEDA"/>
+<defs>
+<filter id="filter0_f" x="0.479004" y="0.262115" width="547.241" height="428.497" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur"/>
+</filter>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(264.057 229.309) rotate(5.4186) scale(137.792 102.407)">
+<stop offset="0.328125" stop-color="#CCEEDA"/>
+<stop offset="0.833333" stop-color="#CFC6F1"/>
+</radialGradient>
+</defs>
+</svg>

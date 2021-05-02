@@ -26,12 +26,12 @@ const NavBar = (props) => {
                         Your Courses
                     </p>
                 </Link>
-                <Link to="/chat" className={styles.topLink}>
+                <a href="http://34.66.210.81/" className={styles.topLink}>
                     <CgPlayListSearch className={styles.topIcon} style={{color: props.active === '/chat' ? '#7544FF' : '#363636', width:'28px', height:'28px'}}/>
                     <p style={{color: props.active === '/chat' ? '#7544FF' : '#363636'}}>
                         Chatty Chatter
                     </p>
-                </Link>
+                </a>
             </div>
             <div className={styles.navBottomContainer}>
                 <div className={styles.bottomLink}>
