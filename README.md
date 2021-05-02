@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+## Inspiration
+2d online school sad. Jokes aside, our team thought felt that online learning could use some improvement. Research from [Columbia University](https://www.sciencedaily.com/releases/2020/04/200428093519.htm ) has shown that approximately 3 million US students (3~4% of the population) may suffer from visual-spatial learning disabilities. We felt that these students would be particularly marginalized by conventional online learning platforms, which do not give students an opportunity to interact with real 3d objects in real time. We wanted to change and empower students in the classrooms, regardless of their abilities, and create fair learning opportunities for everyone. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What it does
+Dimension is a web app that allows users to experience online learning in a whole new dimension. Dimension provides an immersive learning experience using 3D streaming technology that allows students to see the depth of the video, which can help them learn in ways never possible before. 
 
-## Available Scripts
+## How we built it
+### Web
+For the frontend, we used React to setup a modern platform for users to browse and search for courses and creators. We also used Figma to design a responsive and convenient UI for our users 💖.
 
-In the project directory, you can run:
+### Chatterbox
+We built a chatting application so users could ask questions and communicate with each other real time! The chat was built using React on the front-end and Express/Node for the server. We also used DataStax's cloud Cassandra database to persist user messages. We used [this open source repo](https://github.com/davidzas/react-chat) to start us off.
 
-### `yarn start`
+### 3D Transmission
+To capture the 3D data in real time, we used the Record3D library along with an iPhone 11. We read the depth & texture data stream in python and encode it into a traditional RGB image using an implementation of a [multi-wavelength depth encoding](https://www.osapublishing.org/ao/abstract.cfm?uri=ao-54-36-10684) method. We then transmit the encoding and texture images along with some extra parameters over a Socket.IO connection to the backend streaming server.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The streaming server's responsibility is to distribute data from streamer to viewers. When the streaming server receives a new depth payload, it forwards it to clients who are connected to view the stream.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+On the client side, we used [ThreeJS](https://threejs.org/) to render our 3D data in WebGL. When the client receives a depth & texture payload, it performs a multi-wavelength depth decoding to retrieve the original depth data. The client then moves the depth and texture data into a Three PlaneBufferGeometry to be rendered.
 
-### `yarn test`
+## Challenges we ran into
+* Achieving robust, high frame rate 3D streaming over network can be challenging, especially over the course of 48 hours. Factors like network speed and local processing power (on both the streaming and viewing clients) can bottleneck performance.
+* Gracefully integrating the streaming and chat client pages into the rest of the frontend was initially a challenge. More foresight into how we'd build everything out would have made integration easier to execute.
+* 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Accomplishments that we're proud of
+* Achieving high quality 3D transmission/rendering
+* Building out all 3 parts of the MVP for our project 
 
-### `yarn build`
+## What we learned
+* 3D sensors can vary in quality greatly depending on their capture technique.
+* 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## What's next for dimension
+* Swap from Socket.IO to WebRTC video streaming to improve on current latency/throughput.
+* Change out our 3D rendering and chat iframe embeds for React components.
