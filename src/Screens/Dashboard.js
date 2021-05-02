@@ -54,7 +54,7 @@ const Dashboard = (props) => {
                         <div className={styles.titleText}>Upcoming Streams</div>
                     </div>
                     <div>
-                        <div className={styles.titleText}>View All</div>
+                        <div className={styles.titleText} style={{cursor:'pointer'}}>View All</div>
                     </div>
                 </div>
                 <div className={styles.missedStreams}>
@@ -67,7 +67,7 @@ const Dashboard = (props) => {
                         <div className={styles.titleText}>Streams You Missed</div>
                     </div>
                     <div>
-                        <div className={styles.titleText}>View All</div>
+                        <div className={styles.titleText} style={{cursor:'pointer'}}>View All</div>
                     </div>
                 </div>
                 <div className={styles.missedStreams}>

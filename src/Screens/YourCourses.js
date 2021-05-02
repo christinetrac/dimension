@@ -47,12 +47,12 @@ const YourCourses = (props) => {
                 <div className={styles.bannerText}><span>your courses</span></div>
 
                 <div style={{marginLeft: '54px', marginTop:'-120px', marginRight:'33px', display:'flex', width:'689px', flexDirection:'row', justifyContent:'space-between', position:'relative'}}>
-                    <div className={styles.titleText} style={{color:'#7544FF', fontWeight:'700'}}>Overview</div>
+                    <div className={styles.titleText} style={{color:'#7544FF', fontWeight:'700', cursor:'pointer'}}>Overview</div>
                     <div style={{color:'#7544FF', position:'absolute', top:'23px', left:'42px'}}>●</div>
-                    <div className={styles.titleText} style={{color:'#000'}}>Your Dimensions</div>
-                    <div className={styles.titleText} style={{color:'#000'}}>Subscribed</div>
-                    <div className={styles.titleText} style={{color:'#000'}}>Calendar</div>
-                    <div className={styles.titleText} style={{color:'#000'}}>Past Streams</div>
+                    <div className={styles.titleText} style={{color:'#000', cursor:'pointer'}}>Your Dimensions</div>
+                    <div className={styles.titleText} style={{color:'#000', cursor:'pointer'}}>Subscribed</div>
+                    <div className={styles.titleText} style={{color:'#000', cursor:'pointer'}}>Calendar</div>
+                    <div className={styles.titleText} style={{color:'#000', cursor:'pointer'}}>Past Streams</div>
                 </div>
 
                 <div style={{marginLeft: '54px', marginTop:'70px', marginRight:'33px', display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
@@ -61,7 +61,7 @@ const YourCourses = (props) => {
                         <div className={styles.titleText}>Your Dimensions</div>
                     </div>
                     <div>
-                        <div className={styles.titleText}>Edit</div>
+                        <div className={styles.titleText} style={{cursor:'pointer'}}>Edit</div>
                     </div>
                 </div>
                 <div className={styles.liveCourses}>
@@ -84,7 +84,7 @@ const YourCourses = (props) => {
                         <div className={styles.titleText}>Subscribed Course Channel</div>
                     </div>
                     <div>
-                        <div className={styles.titleText}>View All</div>
+                        <div className={styles.titleText} style={{cursor:'pointer'}}>View All</div>
                     </div>
                 </div>
                 <div className={styles.subbedChannels}>
