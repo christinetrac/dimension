@@ -6,6 +6,22 @@
 
 .player {
     position: relative;
+    width: calc(100vw - 17vw);
+}
+
+.chatContainer {
+    position: absolute;
+    bottom: 0;
+    height: 83vh;
+    right: 0;
+    border: none;
+    z-index: 99;
+}
+
+.chat {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    border:none;
+    outline: none;
 }
 
 .creatorContainer {
