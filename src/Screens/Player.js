@@ -10,6 +10,7 @@ import profile from "../assets/profile1.png";
 import {Link} from "react-router-dom";
 import verify from "../assets/verify.svg";
 import video from "../assets/cupdemo.mov";
+import { Md3DRotation } from "react-icons/md";
 
 const Player = (props) => {
 
@@ -19,9 +20,15 @@ const Player = (props) => {
             <Header/>
             <div className={styles.player}>
                 <video src={video} autoPlay="true" muted="true" className={styles.video}/>
-                <div className={styles.videoInfo}>
+                <div>
                     <div className={styles.videoTitle}>Giraffe Ceramic Planters</div>
                     <div className={styles.live}>●  live</div>
+                    <Md3DRotation className={styles.dIcon}/>
+                    <div className={styles.dText}>Toggle 3D  View</div>
+                    <div className={styles.toggle}>
+                        <div className={styles.on}>ON</div>
+                        <span>OFF</span>
+                    </div>
                     <MdRemoveRedEye className={styles.eye}/>
                     <div className={styles.viewers}>143 viewers</div>
                     <MdAccessTime className={styles.clock}/>
