@@ -7,12 +7,82 @@
 .player {
     position: relative;
     width: calc(100vw - 17vw);
+    height: 135vh;
+}
+
+.video {
+    position: absolute;
+    width: calc(100% - 275px);
+    top: 127px;
+}
+
+.videoTitle {
+    font-weight: 700;
+    font-size: 30px;
+    color: #363636;
+    position: absolute;
+    left: 116px;
+    bottom: 257px; /*200*/
+}
+
+.live {
+    width: 66px;
+    height: 23px;
+    background-color: #FF4F4F;
+    color: #fff;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 264px;
+    left: 40px;
+}
+
+.eye {
+    width: 43px;
+    height: 32px;
+    color: #363636;
+    position: absolute;
+    left: 35px;
+    bottom: 208px;
+}
+
+.viewers {
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    position: absolute;
+    left: 85px;
+    bottom: 210px;
+}
+
+.clock {
+    width: 29px;
+    height: 29px;
+    color: #363636;
+    position: absolute;
+    left: 200px;
+    bottom: 208px;
+}
+
+.duration {
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    position: absolute;
+    left: 240px;
+    bottom: 210px;
 }
 
 .chatContainer {
     position: absolute;
     bottom: 0;
-    height: 83vh;
+    height: 119.5vh;
     right: 0;
     border: none;
     z-index: 99;
@@ -28,7 +98,7 @@
     position: absolute;
     bottom: 0;
     width: 100vw;
-    height: 150px;
+    height: 110px;
     background-color: #fff;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
     margin-left: -17vw;
@@ -42,7 +112,7 @@
     height: 106px;
     width: 106px;
     margin-left: calc(17vw + 45px);
-    margin-top: 43px;
+    margin-top: 33px;
     margin-right: 25px;
 }
 
@@ -97,7 +167,7 @@
 }
 
 .subscribe {
-    margin-right: 300px;
+    margin-right: 432px;
     width: 173px;
     height: 42px;
     background: #858585;
@@ -110,7 +180,7 @@
     font-size: 18px;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 70px;
     cursor: pointer;
 }
 
