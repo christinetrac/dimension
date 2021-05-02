@@ -7,6 +7,13 @@
 .player {
     position: relative;
     width: calc(100vw - 17vw);
+    height: 135vh;
+}
+
+.video {
+    position: absolute;
+    width: calc(100% - 275px);
+    top: 127px;
 }
 
 .videoTitle {
@@ -75,7 +82,7 @@
 .chatContainer {
     position: absolute;
     bottom: 0;
-    height: 83vh;
+    height: 119.5vh;
     right: 0;
     border: none;
     z-index: 99;
@@ -160,7 +167,7 @@
 }
 
 .subscribe {
-    margin-right: 300px;
+    margin-right: 432px;
     width: 173px;
     height: 42px;
     background: #858585;

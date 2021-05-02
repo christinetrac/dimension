@@ -9,6 +9,7 @@ import { FaCube } from "react-icons/fa";
 import profile from "../assets/profile1.png";
 import {Link} from "react-router-dom";
 import verify from "../assets/verify.svg";
+import video from "../assets/cupdemo.mov";
 
 const Player = (props) => {
 
@@ -17,16 +18,15 @@ const Player = (props) => {
             <NavBar active={props.location.pathname}/>
             <Header/>
             <div className={styles.player}>
-                {/*<div style = {{flexDirection:'row', display:'flex'}}>*/}
-                {/*    <iframe src="http://localhost:3001/depth.html" height="100%" width="100%"/>*/}
-                {/*</div>*/}
-
-                <div className={styles.videoTitle}>Giraffe Ceramic Planters</div>
-                <div className={styles.live}>●  live</div>
-                <MdRemoveRedEye className={styles.eye}/>
-                <div className={styles.viewers}>143 viewers</div>
-                <MdAccessTime className={styles.clock}/>
-                <div className={styles.duration}>1:23:55</div>
+                <video src={video} autoPlay="true" muted="true" className={styles.video}/>
+                <div className={styles.videoInfo}>
+                    <div className={styles.videoTitle}>Giraffe Ceramic Planters</div>
+                    <div className={styles.live}>●  live</div>
+                    <MdRemoveRedEye className={styles.eye}/>
+                    <div className={styles.viewers}>143 viewers</div>
+                    <MdAccessTime className={styles.clock}/>
+                    <div className={styles.duration}>1:23:55</div>
+                </div>
 
                 <div className={styles.chatContainer}>
                     <iframe src="http://34.66.210.81/" height="100%" width='275px' className={styles.chat}/>
