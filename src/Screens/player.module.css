@@ -43,6 +43,62 @@
     left: 40px;
 }
 
+.dIcon {
+    color: #363636;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    left: 900px;
+    bottom: 277px;
+    font-weight: 700;
+}
+
+.dText {
+    color: #363636;
+    font-size: 12px;
+    position: absolute;
+    left: 927px;
+    bottom: 277px;
+}
+
+.toggle {
+    position: absolute;
+    width: 173px;
+    height: 39px;
+    background-color: #fff;
+    border: 1px solid #E4E4E4;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    letter-spacing: 0.05em;
+    color: #F0F0F0;
+    font-weight: 700;
+    font-size: 18px;
+    bottom: 210px;
+    left: 839px;
+}
+
+.toggle span {
+    position: absolute;
+    right: 25px;
+    top: 7px;
+}
+
+.on {
+    position: absolute;
+    width: 94px;
+    height: 39px;
+    background: #7544FF;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .eye {
     width: 43px;
     height: 32px;
