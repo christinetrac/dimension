@@ -19,7 +19,13 @@ const YourCourses = (props) => {
         )
     });
 
-    const subscribedChannels = SUBSCRIBED_CHANNELS.map( course => {
+    const subscribedChannels1 = SUBSCRIBED_CHANNELS.slice(0, 3).map( course => {
+        return (
+            <SubscribedChannels key={course} course={course}/>
+        )
+    });
+
+    const subscribedChannels2 = SUBSCRIBED_CHANNELS.slice(3, 6).map( course => {
         return (
             <SubscribedChannels key={course} course={course}/>
         )
@@ -53,7 +59,10 @@ const YourCourses = (props) => {
                     </div>
                 </div>
                 <div className={styles.subbedChannels}>
-                    {subscribedChannels}
+                    {subscribedChannels1}
+                </div>
+                <div className={styles.subbedChannels} style={{marginTop:'27px'}}>
+                    {subscribedChannels2}
                 </div>
             </div>
         </div>

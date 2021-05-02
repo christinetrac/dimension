@@ -1,5 +1,12 @@
 const LIVE_COURSES = [
     {
+        title: 'Giraffe Ceramic Planters',
+        creator: 'Amii Ceramics',
+        views: '122',
+        dimension: 'Pottery',
+        image: require('../assets/0.png').default
+    },
+    {
         title: 'Plate Making at Home (⁎˃ᆺ˂)',
         creator: 'Lolita Olympia',
         views: '214',
