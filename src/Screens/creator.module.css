@@ -1,0 +1,9 @@
+.main {
+    display: flex;
+    position: relative;
+    font-family: Manrope, sans-serif;
+}
+
+.creator {
+    position: relative;
+}

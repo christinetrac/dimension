@@ -9,6 +9,7 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
     border-radius: 0 0 87px 0;
     font-family: Manrope, sans-serif;
+    z-index: 99;
 }
 
 .blob1 {

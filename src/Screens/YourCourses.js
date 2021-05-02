@@ -3,7 +3,7 @@ import styles from './your-courses.module.css';
 import { NavBar } from "../Components/NavBar";
 import { Header } from "../Components/Header";
 import banner from "../assets/your-courses-banner.svg";
-import { LIVE_COURSES, SUBSCRIBED_CHANNELS, UPCOMING_STREAMS } from "../constants/constants";
+import { LIVE_COURSES, SUBSCRIBED_CHANNELS } from "../constants/constants";
 import { LiveCourse } from "../Components/LiveCourse";
 import { MdLiveTv } from "react-icons/md";
 import { MdFavorite } from "react-icons/md"
